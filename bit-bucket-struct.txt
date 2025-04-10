@@ -1,0 +1,125 @@
+﻿header
+         H1.left
+                A > img
+        Nav.middle
+                Ul
+                        li*4
+                                A
+        Nav.right
+                Ul
+                        li
+                                A
+                        Li
+                                A.button
+section#spotlight
+        Section.wrapper
+                H1
+                P
+                A.button
+                span.lable> a
+                Img
+section#features
+        Section.wrapper
+                Ul > li
+                        Img
+                        H3
+                        P
+section#highlights
+        Section.wrapper
+                Section.item
+                        Section.img-cont
+                                img
+                        Section.cont.box
+                                Span.label
+                                H3
+                                P
+                                a.button
+section#resources
+        Section.wrappper
+Section.top
+        H3
+        P
+        ul>li*2
+                Img
+                H4
+                P
+                .button
+Section.bottom
+        H3
+        P
+        ul>li*3
+                Img
+                H4
+                P
+                .button
+section#brands
+        Selection.wrapper
+                H3
+ul>li*5
+        Img
+
+
+section#pricing
+        Section.wrapper
+                Section.top
+                        H3
+                        Ul
+li*2
+                                Div.title
+                                        H5
+                                Div.cont
+                                        H4
+                                        Span
+                                        Small
+                                        a.button
+Span.label
+                                Li
+                                        Div.title-bg
+                                        H5
+                                Div.cont
+                                        H4
+                                        Span
+                                        Small
+                                        a.button_fill
+Span.label
+                        Div.bottom
+                                P
+                                        B+a
+Section.bottom
+                        A.label
+                        Div.content
+                                Div.item*2
+                                        Div.left
+                                                img
+                                        Div.right
+                                                H3
+P
+                                                a.button
+section#banner
+        Section.wrapper
+                H3
+                A.button
+Footer
+        Section.wrapper
+                Section.top
+                        div.item*2
+                                H3
+                                ul>li*4
+                        Div.item-large
+                                H3
+p
+Form
+        Input
+        Input
+                        Div.social
+                                P
+                                ul>li*2>a>img
+                Section.bottom
+                        Section.left
+                                h1>a>img
+ul.li*4>a
+Section.bottom-left
+Form
+        Select
+                        Section.right
+                                a.button

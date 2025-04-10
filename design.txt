@@ -1,0 +1,263 @@
+
+ATLASSIAN
+Bitbucket Why Bitbucket
+Product Guide
+Self-Hosted Pricing
+Log in
+Get it free
+Built for professional teams
+Bitbucket is more than just Git code management. Bitbucket gives teams one place to plan projects, collaborate on code, test, and deploy.
+Get it free
+If you're looking for our self-managed option, check out Bitbucket Data Center →
+bugfix/BUG-123 remove extra padding
+bugfix/BUG-123 main OPEN
+Created 11 hours ago Last updated one hour ago
+Approve Merge
+...
+I made a few changes to tidy up the code. Please let me know if all looks good! It should work on desktop browser and mobile browsers. I've run the tests and they pass locally. I'll check to make sure the pipelines tests pass as well.
+19 19
+20 20
+21 21
+22
+templates/components/select.css
+@@ -17,22 +17,17 @@
+.wrapper {
+.select-container {
+padding: 40px;
+padding: 12px;
+Free unlimited private repositories
+Free for small teams under 5 and priced to scale with Standard ($3/user/mo) or Premium ($6/user/mo) plans.
+Bitbucket for DevOps
+Bitbucket integrates with first- and third-party tools to reduce context-switching and improve code quality. Learn more about using Bitbucket for DevOps.
+Built-in Continuous
+Delivery
+Build, test and deploy with integrated CI/CD. Benefit from configuration as code and fast feedback loops.
+js/core.js
+@@ -17,22 +17,17 @@
+CODE COLLABORATION
+...
+19 19
+20 20
+# Only use spaces to indent your .yml configuration. #-----
+21 21
+22
++ image: java:8
+# You can specify a custom docker image from Docker Hub at your build environment.
+Omar Darboe 10 hours ago
+You'll also want to add the android-sdk to the list of caches to speed up the build. It'll probably save the build at least 4 minutes or so. I'll add a task to remind you.
+Reply. Like. Create task. Create Jira issue
+Spike packages to cache
+Jane Rotanson 2 hours ago
+Good cache! Pun intended Thanks, I'll do that.
+Reply. Like. Create task. Create Jira issue
+Build quality software with code review
+Approve code review more efficiently with pull requests. Create a merge checklist with designated approvers and hold discussions right in the source code with inline comments.
+23 22
+24 23 25 24
+pipelines:
+default:
+CONTINUOUS DELIVERY
+MOB-144 Evaluate adding android-sdk package to pipelines
+TO DO
+Grace Harris 1 hour ago
+Sweet. In that case, everything's great! I approve✔
+Reply Like Create task Create Jira issue
+Deploy often with
+built-in continuous
+delivery
+Bitbucket Pipelines with Deployments lets you build, test and deploy with
+integrated CI/CD. Benefit from
+configuration as code and fast feedback loops.
+Logs
+Stacy Jones/alpha-team-app / Pipelines
+Pipeline #14
+Build + Add a service or database
++npm test
+npm info it worked if it ends with ok
+Rerun
+npm info using npm@3.10.10
+✔ Successful
+26 sec 20 hours ago
+Push by Stacy Jones
+Commit
+>
+@deeacb
+Pipeline
+View configuration
+✔build
+test
+Download raw
+npm info using node@v6.9.4
+npm info lifecycle @atlassian/calculator@1.0.0-pretest: @atlassian/calculat npm info lifecycle @atlassian/calculator@1.0.0-test: @atlassian/calculator
+> @atlassian/calculator@1.0.0 test /opt/atlassian/pipelines/agent/build > jest
+FAIL/calculator.test.js
+• two high priority ops
+expect(received).toBe(expected)
+Expected value to be (using =):
+65
+5.75
+Received:
+6s
+4.25
+Learn more →
+Deploy to staging
+6s
+Deploy to production
+Bitbucket
+Your work Repositories Projects
+Pull Requests
+Issues
+Snippets Create
+Q Search
+Currency ex Repository
+</>Source
+Reports
+Snyk security scan
+Snyk reported a moment ago
+Commits
+1
+Branches
+Snyk security scan
+This pull request introduces 9 new vulnerabilities
+Total issues 9 High severity 3
+Medium severity 1
+Low severity 5
+passed
+X
+ues resolved
+13 Pull requests
+Pipelines
+Severity
+Summary
+File
+burner-iii
+High
+High
+qs@6.0.0: Denial of service (Memory exhaustion) send@0.0.1: Root path disclosure
+tables.js:0 tables.js:0
+Deployment
+js Q
+High
+send@0.0.1: Root path disclosure
+Downloads
+Boards
+Medium send@0.0.2: Root path disclosure
+Low
+express@0.0.1: Cross site Scripting (XSS)
+ratelimitfilter.java:1828 ratelimitfilter.java:1828 ratelimitfilter.java:1828
+Low
+express@0.0.1: Cross site Scripting (XSS)
+ratelimitfilter.java:1828
+Settings
+Low
+express@0.0.1: Cross site Scripting (XSS)
+ratelimitfilter.java:1828
+Low
+express@0.0.1: Cross site Scripting (XSS)
+Low
+express@0.0.1: Cross site Scripting (XSS)
+ratelimitfilter.java:1828 ratelimitfilter.java:1828
+it('should return null if the user is anonymous"
+const result = getTopLinks({}, true, false, true, true, true, true, true); const result getTopLinks(), true, true, true, true, true);
+1 of 1 Integrations failed
+COMPLIANCE AND COLLABORATION
+Made for enterprise collaboration
+Know your code is secure in the Cloud with IP whitelisting and required 2-step verification. Restrict access to certain users, and control their actions with branch permissions and merge checks for quality code.
+Learn more →
+at Object.<anonymous>.test (calculator.test.js:38:38)
+at Promise.resolve. then.el (node_modules/p-map/index.js:46:16)
+at process._tickCallback (internal/process/next_tick.js:103:7)
+✓ single addition (4ms)
+✓ multiple addition (1ms)
+Branch permissions
+Manage who can write or merge to specific branches.
+Branch
+Access type
+master
+Write access
+Merge via pull request
+wsmith/*
+Write access
+DEVSECOPS
+Build secure software from the start
+Bring security directly into every stage of the development process. Get real-time visibility into any security issues in their code and containers, identify vulnerability fixes early in development and monitor new risks post deployment.
+Learn More →
+Users and groups
+None
+Nucleus-Dev
+William Smith
+Merge via pull request
+Kevin Campbell
+Jennifer Evans
+New to Git?
+No problem. We have resources to get you up to speed, quickly.
+Learn Git with interactive tutorials
+Make Bitbucket your Git sandbox with tutorials that bring you up to speed with Git and help you build effective workflows.
+Learn more →
+Download Sourcetree, our free Git GUI.
+Say goodbye to the command line - Sourcetree simplifies how you interact with your Git repositories so you can focus on coding.
+Learn more →
+Integrations: Bitbucket, but better
+Start with Bitbucket, then bring in the tools you already use to build better software
+Jira Software
+Improve efficiency by connecting branches, commits, and pull requests to Jira Software issues.
+Connect framework
+Customize Bitbucket your way with apps that embed right in Bitbucket's Ul, built with Bitbucket Connect.
+Trigger webhooks
+Integrate easily with systems you already use in your day-to-day using Bitbucket webhooks.
+See all integrations →
+More than 1 million teams and 10 million developers love Bitbucket
+PayPal wework pandora
+Ford
+Free
+Simple plans hosted in the cloud.
+Priced to scale.
+Standard
+Premium
+USD O
+per user/month
+up to 5 users
+USD 3
+per user/month 1-100 users
+USD 6
+per user/month 1-100 users
+Get started
+Free forever
+Try it free
+Starts at $15/month
+101+ users? We offer discounts for large teams! Calculate your price
+Want to learn more about our self-managed option?
+Try it free
+Starts at $30/month
+See a demo of Bitbucket Cloud
+Want to see Bitbucket Cloud in action? Watch a recorded demo and get the facts from one of our
+experts so you can get started yourself.
+Watch the demo →
+Interested in our self-managed option?
+For teams that would prefer to manage their software in-house, we offer Bitbucket Data Center,
+Atlassian's purpose-built enterprise offering.
+Bitbucket Data Center →
+A better way to build software
+Bitbucket
+Blog
+Bitbucket writing program
+ΑΡΙ
+Resources
+Technical support
+Documentation
+Plans & pricing
+Site status
+▲ ATLASSIAN
+Privacy policy
+Languages▾
+Get it free
+Connect with us
+Sign up for Git articles and resources:
+Email address
+What is Version Control?
+Terms of use Trust & security
+Copyright © 2021
+Subscribe
+Connect with Bitbucket
+f
+View all Atlassian products →
